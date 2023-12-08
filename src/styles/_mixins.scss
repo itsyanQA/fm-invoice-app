@@ -1,4 +1,5 @@
 @mixin heading-large {
+  color: var(--heading-1-clr);
   font-size: 36px;
   font-weight: 700;
   letter-spacing: -1.125px;
@@ -21,6 +22,7 @@
   font-weight: 500;
   line-height: 18px;
   letter-spacing: -0.1px;
+  color: var(--heading-2-clr);
 }
 
 @mixin body-small-spacing {
