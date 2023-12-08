@@ -4,6 +4,18 @@
   width: 103px;
   height: 103px;
 
+  @media screen and (max-width: 900px) {
+    width: 80px;
+    height: 80px;
+    background: no-repeat url("../../../assets/svgs/logo-bg-tablet.svg");
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 72px;
+    height: 72px;
+    background: no-repeat url("../../../assets/svgs/logo-bg-mobile.svg");
+  }
+
   &__logo {
     position: absolute;
     top: 50%;
