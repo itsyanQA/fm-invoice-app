@@ -1,0 +1,13 @@
+.logo-container {
+  position: relative;
+  background-image: url("../../../assets/svgs/logo-bg.svg");
+  width: 103px;
+  height: 103px;
+
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

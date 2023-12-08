@@ -1,0 +1,51 @@
+.settings {
+  width: 103px;
+  height: 100vh;
+  background-color: var(--sub-bg-1-clr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+  padding: 0 0 20px 0;
+  justify-content: space-between;
+
+  @media screen and (max-width: 900px) {
+    height: 103px;
+    width: 100%;
+    border-radius: 0;
+    flex-direction: row;
+    padding: 0 40px 0 0;
+  }
+
+  &__theme-and-profile-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    @media screen and (max-width: 900px) {
+      width: unset;
+      flex-direction: row;
+      height: 100%;
+    }
+  }
+
+  &__horizontal-line {
+    width: 100%;
+    border-top: 1px solid #494e6e;
+
+    @media screen and (max-width: 900px) {
+      width: 0;
+      border-top: unset;
+      border-left: 1px solid #494e6e;
+      height: 100%;
+    }
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+  }
+}

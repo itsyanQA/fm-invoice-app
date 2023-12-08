@@ -1,0 +1,11 @@
+.theme-icon {
+  cursor: pointer;
+
+  & path {
+    transition: fill 250ms ease;
+  }
+
+  &:hover path {
+    fill: #dfe3fa;
+  }
+}
