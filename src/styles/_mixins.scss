@@ -1,0 +1,31 @@
+@mixin heading-large {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -1.125px;
+}
+
+@mixin heading-medium {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.75px;
+}
+
+@mixin heading-small {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+}
+
+@mixin body-regular {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+}
+
+@mixin body-small-spacing {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.1px;
+}
