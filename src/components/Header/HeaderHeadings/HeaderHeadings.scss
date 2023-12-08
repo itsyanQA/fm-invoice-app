@@ -1,0 +1,14 @@
+@use "../../../styles/mixins" as *;
+
+.header-title-container {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    @include heading-large;
+  }
+
+  &__invoices-count {
+    @include body-regular;
+  }
+}
