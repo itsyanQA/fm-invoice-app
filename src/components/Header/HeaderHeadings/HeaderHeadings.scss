@@ -3,6 +3,11 @@
 .header-title-container {
   display: flex;
   flex-direction: column;
+  gap: 6px;
+
+  @media screen and (max-width: 600px) {
+    gap: 3px;
+  }
 
   &__title {
     @include heading-large;
