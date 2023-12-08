@@ -1,5 +1,6 @@
 .app-container {
   display: flex;
+  min-width: 290px;
 
   @media screen and (max-width: 900px) {
     flex-direction: column;
