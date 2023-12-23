@@ -1,0 +1,94 @@
+@use "../../styles/mixins" as *;
+
+.invoice {
+  display: flex;
+  background-color: var(--sub-bg-2-clr);
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: var(--generic-box-shadow-clr);
+  cursor: pointer;
+
+  &:hover {
+    outline: 1px solid var(--deep-purple);
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 24px;
+    align-items: unset;
+    padding: 28px;
+  }
+
+  &__id-date-name-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &__due-date-container {
+    display: flex;
+    gap: 8px;
+    width: 125px;
+    @include body-regular;
+  }
+
+  &__due-text {
+    color: var(--body-text-1-clr);
+  }
+
+  &__payment-date-text {
+    color: var(--body-text-2-clr);
+  }
+
+  &__id {
+    color: var(--heading-1-clr);
+    width: 70px;
+    @include heading-small;
+
+    &::before {
+      content: "#";
+      color: var(--powder);
+    }
+  }
+
+  &__total {
+    @include heading-small;
+    color: var(--heading-1-clr);
+  }
+
+  &__price-status-arrow-container {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+  }
+
+  &__status-and-arrow-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__client-name {
+    @include body-regular;
+  }
+
+  // Mobile elements
+  &__mobile-id-and-client-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__mobile-bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__mobile-due-date-and-price-container {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+}
