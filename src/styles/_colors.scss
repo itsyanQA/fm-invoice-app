@@ -3,12 +3,14 @@
   --heading-2-clr: #858bb2;
   --body-text-1-clr: #888eb0;
   --body-text-2-clr: #7e88c3;
-  --select-item-clr: #1e2139;
   --bg-clr: #f8f8fb;
   --sub-bg-1-clr: #373b53;
   --sub-bg-2-clr: #ffffff;
   --sub-bg-3-clr: #ffffff;
-  --box-shadow-clr: 0px 10px 10px -10px rgba(72, 84, 159, 0.10);;
+  --sub-bg-4-clr: #373b53;
+  --select-box-shadow-clr: 0px 10px 20px 0px rgba(72, 84, 159, 0.25);
+  --select-item-clr: #1e2139;
+  --checkbox-bg: #dfe3fa;
 
   // constant colors
   --coral-red: #ec5757;
@@ -19,19 +21,10 @@
   --amber-orange: #ff8f00;
   --charcoal-gray: #373b53;
   --white: #ffffff;
-}
-
-[data-theme="dark"] {
-  --heading-1-clr: #ffffff;
-  --heading-2-clr: #ffffff;
-  --body-text-1-clr: #dfe3fa;
-  --body-text-2-clr: #dfe3fa;
-  --select-item-clr: #ffffff;
-  --bg-clr: #141625;
-  --sub-bg-1-clr: #1e2139;
-  --sub-bg-2-clr: #1e2139;
-  --sub-bg-3-clr: #252945;
-  --box-shadow-clr: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  --paid-status-bg: #33d69f19;
+  --pending-status-bg: #ff8f0019;
+  --draft-status-bg: #373b5319;
+  --generic-box-shadow-clr: 0px 10px 10px -10px rgba(72, 84, 159, 0.1);
 }
 
 [data-theme="light"] {
@@ -43,8 +36,25 @@
   --sub-bg-1-clr: #373b53;
   --sub-bg-2-clr: #ffffff;
   --sub-bg-3-clr: #ffffff;
-  --box-shadow-clr: 0px 10px 10px -10px rgba(72, 84, 159, 0.10);;
+  --sub-bg-4-clr: #373b53;
+  --select-box-shadow-clr: 0px 10px 20px 0px rgba(72, 84, 159, 0.25);
   --select-item-clr: #1e2139;
+  --checkbox-bg: #dfe3fa;
+}
+
+[data-theme="dark"] {
+  --heading-1-clr: #ffffff;
+  --heading-2-clr: #ffffff;
+  --body-text-1-clr: #dfe3fa;
+  --body-text-2-clr: #dfe3fa;
+  --bg-clr: #141625;
+  --sub-bg-1-clr: #1e2139;
+  --sub-bg-2-clr: #1e2139;
+  --sub-bg-3-clr: #252945;
+  --sub-bg-4-clr: #dfe3fa;
+  --select-box-shadow-clr: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  --select-item-clr: #ffffff;
+  --checkbox-bg: #1e2139;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,11 +63,13 @@
     --heading-2-clr: #ffffff;
     --body-text-1-clr: #dfe3fa;
     --body-text-2-clr: #dfe3fa;
-    --select-item-clr: #ffffff;
     --bg-clr: #141625;
     --sub-bg-1-clr: #1e2139;
     --sub-bg-2-clr: #1e2139;
     --sub-bg-3-clr: #252945;
-    --box-shadow-clr: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    --sub-bg-4-clr: #dfe3fa;
+    --select-box-shadow-clr: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    --select-item-clr: #ffffff;
+    --checkbox-bg: #1e2139;
   }
 }

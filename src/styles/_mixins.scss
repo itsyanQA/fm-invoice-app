@@ -3,6 +3,10 @@
   font-size: 36px;
   font-weight: 700;
   letter-spacing: -1.125px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
+  }
 }
 
 @mixin heading-medium {
@@ -20,7 +24,6 @@
 @mixin body-regular {
   font-size: 13px;
   font-weight: 500;
-  line-height: 18px;
   letter-spacing: -0.1px;
   color: var(--heading-2-clr);
 }
