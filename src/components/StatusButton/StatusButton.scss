@@ -1,0 +1,44 @@
+@use "../../styles/mixins" as *;
+
+.status-button {
+  all: unset;
+  display: flex;
+  text-transform: capitalize;
+  border-radius: 6px;
+  width: 104px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+
+  &__text {
+    @include heading-small;
+  }
+
+  &--is-paid {
+    color: var(--teal-green);
+    background-color: var(--paid-status-bg);
+
+    & svg > circle {
+      fill: var(--teal-green);
+    }
+  }
+
+  &--is-pending {
+    color: var(--amber-orange);
+    background-color: var(--pending-status-bg);
+
+    & svg > circle {
+      fill: var(--amber-orange);
+    }
+  }
+
+  &--is-draft {
+    color: var(--sub-bg-4-clr);
+    background-color: var(--draft-status-bg);
+
+    & svg > circle {
+      fill: var(--sub-bg-4-clr);
+    }
+  }
+}
