@@ -1,0 +1,43 @@
+@use "../../styles/mixins" as *;
+
+.invoices-empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    @include heading-medium;
+  }
+
+  &__description {
+    @include body-regular;
+    max-width: 200px;
+    text-align: center;
+
+    @media screen and (max-width: 600px) {
+      max-width: 205px;
+    }
+  }
+
+  &__new-invoice-text {
+    font-weight: 700;
+  }
+
+  &__illustration {
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 600px) {
+      margin-bottom: 40px;
+    }
+  }
+}
