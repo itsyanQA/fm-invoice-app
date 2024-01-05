@@ -9,7 +9,7 @@ export function SettingsBar() {
       <div className="settings__theme-and-profile-container">
         <Theme />
         <span className="settings__horizontal-line" />
-        <img className="settings__avatar" src={require("../../../assets/images/image-avatar.jpg")} alt="avatar"/>
+        <img className="settings__avatar" src={require("../../../assets/img/image-avatar.jpg")} alt="avatar" />
       </div>
     </div>
   );

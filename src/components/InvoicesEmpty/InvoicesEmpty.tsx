@@ -1,5 +1,5 @@
 import "./InvoicesEmpty.scss";
-import { ReactComponent as EmptyIllustration } from "../../assets/svgs/illustration-empty.svg";
+import { ReactComponent as EmptyIllustration } from "../../assets/svg/illustration-empty.svg";
 
 export function InvoicesEmpty() {
   return (

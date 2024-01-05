@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { ReactComponent as MoonIcon } from "../../../assets/svgs/icon-moon.svg";
-import { ReactComponent as SunIcon } from "../../../assets/svgs/icon-sun.svg";
+import { ReactComponent as MoonIcon } from "../../../assets/svg/icon-moon.svg";
+import { ReactComponent as SunIcon } from "../../../assets/svg/icon-sun.svg";
 import "./Theme.scss";
 
 type ThemeMode = "light" | "dark";

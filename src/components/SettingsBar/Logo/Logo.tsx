@@ -1,4 +1,4 @@
-import { ReactComponent as InvoiceAppLogo } from "../../../assets/svgs/logo.svg";
+import { ReactComponent as InvoiceAppLogo } from "../../../assets/svg/logo.svg";
 import "./Logo.scss";
 
 export function Logo() {

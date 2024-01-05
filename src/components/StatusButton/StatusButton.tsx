@@ -1,5 +1,5 @@
 import { Status } from "../../types/types";
-import { ReactComponent as Bullet } from "../../assets/svgs/bullet.svg";
+import { ReactComponent as Bullet } from "../../assets/svg/bullet.svg";
 import "./StatusButton.scss";
 
 type StatusButtonProps = {
