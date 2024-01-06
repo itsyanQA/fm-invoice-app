@@ -2,7 +2,7 @@ import "./Layout.scss";
 import { SettingsBar } from "../SettingsBar/SettingsBar";
 import { routes } from "../../routes/routes";
 
-export default function Layout() {
+export function Layout() {
   return (
     <main className="app-container">
       <SettingsBar />
