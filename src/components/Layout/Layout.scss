@@ -1,8 +1,10 @@
+@use "../../styles/mixins" as *;
+
 .app-container {
   display: flex;
   min-width: 290px;
 
-  @media screen and (max-width: 900px) {
+  @include tabletAndBelow {
     flex-direction: column;
   }
 
@@ -11,7 +13,7 @@
     width: 100%;
     margin: 80px auto;
 
-    @media screen and (max-width: 900px) {
+    @include tabletAndBelow {
       margin: 40px auto;
       padding: 0 30px;
     }
