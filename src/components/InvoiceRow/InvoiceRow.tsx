@@ -1,8 +1,10 @@
 import "./InvoiceRow.scss";
 import { Invoice } from "../../types/types";
-import { ReactComponent as ArrowRight } from "../../assets/svgs/icon-arrow-right.svg";
+import { ReactComponent as ArrowRight } from "../../assets/svg/icon-arrow-right.svg";
 import { StatusButton } from "../StatusButton/StatusButton";
 import { useIsMobile } from "../../hooks/useIsMobile";
+import { useNavigate } from "react-router-dom";
+import { InvoiceId } from "../InvoiceId/InvoiceId";
 
 type InvoiceRowProps = {
   invoice: Invoice;
@@ -16,7 +18,7 @@ export function InvoiceRow({ invoice }: InvoiceRowProps) {
       return (
         <div className="invoice">
           <div className="invoice__mobile-id-and-client-container">
-            <span className="invoice__id">{invoice.id}</span>
+            <InvoiceId invoiceId={invoice.id} />
             <span className="invoice__client-name">{invoice.clientName}</span>
           </div>
 
@@ -38,7 +40,7 @@ export function InvoiceRow({ invoice }: InvoiceRowProps) {
     return (
       <div className="invoice">
         <div className="invoice__id-date-name-container">
-          <span className="invoice__id">{invoice.id}</span>
+          <InvoiceId invoiceId={invoice.id} />
           <div className="invoice__due-date-container">
             <span className="invoice__due-text">Due</span>
             <span className="invoice__payment-date-text">{invoice.paymentDue}</span>

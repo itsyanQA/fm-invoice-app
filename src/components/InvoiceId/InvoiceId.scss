@@ -1,0 +1,12 @@
+@use "../../styles/mixins" as *;
+
+.invoice-id {
+  color: var(--heading-1-clr);
+  width: 70px;
+  @include heading-small;
+
+  &::before {
+    content: "#";
+    color: var(--powder);
+  }
+}

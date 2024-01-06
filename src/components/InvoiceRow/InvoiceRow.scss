@@ -42,17 +42,6 @@
     color: var(--body-text-2-clr);
   }
 
-  &__id {
-    color: var(--heading-1-clr);
-    width: 70px;
-    @include heading-small;
-
-    &::before {
-      content: "#";
-      color: var(--powder);
-    }
-  }
-
   &__total {
     @include heading-small;
     color: var(--heading-1-clr);
