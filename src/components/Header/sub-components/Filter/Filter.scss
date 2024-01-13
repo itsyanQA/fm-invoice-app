@@ -1,0 +1,44 @@
+@use "../../../../styles/mixins" as *;
+
+.filter-select {
+  &__item {
+    padding: 0 !important;
+    min-height: unset !important;
+
+    &:is(:active, :hover, :focus, .Mui-selected) {
+      background-color: unset !important;
+    }
+
+    &:hover {
+      & .filter-select__item-checkbox:not(:checked) {
+        outline: 1px solid var(--deep-purple);
+      }
+    }
+  }
+
+  &__item-container {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  &__item-text {
+    color: var(--heading-1-clr);
+    text-transform: capitalize;
+    @include heading-small;
+  }
+
+  &__item-checkbox {
+    all: unset;
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--checkbox-bg);
+    transition: outline 250ms ease;
+    pointer-events: none;
+
+    &:checked {
+      background: url("../../../../assets/svg/icon-check.svg") no-repeat center var(--deep-purple);
+    }
+  }
+}
