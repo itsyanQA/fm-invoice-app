@@ -1,0 +1,18 @@
+@use "../../styles/mixins" as *;
+
+.go-back {
+  display: flex;
+  gap: 23.66px;
+  align-items: center;
+
+  &:hover {
+    & .go-back__text {
+      color: var(--text-hover-clr);
+    }
+  }
+
+  &__text {
+    color: var(--heading-1-clr);
+    @include heading-small;
+  }
+}
